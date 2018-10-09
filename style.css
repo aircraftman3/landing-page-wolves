@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:800');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.outer-container {
+
+    width: 100%;
+    height: 70px;
+}
+
+.inner-container {
+
+    margin: auto;
+    max-width: 1180px;
+    width: 82%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.navbar ul li {
+    display: inline-block;
+    padding: 25px 15px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 800;
+    color: #191347;
+    list-style: none;
+}
+
+.navbar ul {
+    margin: 0;
+}
+
+.main-btn {
+    padding-top: 10px;
+}
