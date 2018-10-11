@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:800');
+@import url('//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
 
 html, body {
     margin: 0;
@@ -6,57 +6,119 @@ html, body {
     height: 100%;
     width: 100%;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 800;
 }
 
 .outer-container {
-
-
     width: 100%;
     height: 70px;
 }
 
 .inner-container {
-
     margin: auto;
     max-width: 1180px;
     width: 83%;
     height: 100%;
     display: flex;
     justify-content: space-between;
-
 }
 
-.navbar ul li {
+.navbar > ul > li {
     display: inline-block;
     padding: 25px 15px;
     text-transform: uppercase;
     font-size: 14px;
-
-
+    font-weight: 800;
     list-style: none;
+}
+
+.navbar + ul {
+    cursor: pointer;
 }
 
 .navbar ul {
     margin: 0;
 }
 
-.navbar li:hover > a{
-
-
+.navbar li:hover > a {
     color: #ef0060;
 }
 
-
-.navbar a {
+.navbar > ul > li > a {
     color: #191347;
     text-decoration: none;
+    font-weight: bolder;
 }
 
 .navbar li:hover {
-    color: #ef0060;
     background: #f4f4f4;
     cursor: pointer;
+}
+
+.why-attend-menu {
+    visibility: hidden;
+    position: absolute;
+    top: 69px;
+    left: 0;
+    width: 100%;
+    height: 191px;
+    background-color: #f4f4f4;
+    z-index: 1;
+}
+
+.why-attend-menu > li > a {
+    display: inline-block;
+    color: #ef0060;
+    font-size: 19.5px;
+    font-weight: 400;
+    padding-bottom: 17px;
+}
+
+.why-attend-menu > li ul > li {
+    font-size: 15.4px;
+    list-style-type: none;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.why-attend-menu > li ul > li > a {
+    display: block;
+    color: #191347;
+    padding-top: 8px;
+    padding-bottom: 5px;
+}
+
+.why-attend-menu > li {
+    padding-right: 150px;
+    position: relative;
+    display: inline-block;
+    padding-top: 21px;
+    text-transform: uppercase;
+    left: 8.5%;
+}
+
+.why-attend-menu > li > ul {
+    padding-left: 0;
+}
+
+.why-attend-menu a {
+    text-decoration: none;
+}
+
+.after-arrow:after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 5.5px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-top: 4px solid \9;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+
+#hidden-li {
+    visibility: hidden;
 }
 
 .main-btn {
@@ -68,12 +130,10 @@ html, body {
     background-size: cover;
     width: 100%;
     height: 193px;
-
 }
 
 .main-header h1 {
     position: absolute;
-
     margin: 0;
     text-transform: uppercase;
     line-height: 1.2;
@@ -95,71 +155,88 @@ html, body {
 
 .content-section {
     margin: auto;
-    background-color: yellow;
     width: 83%;
     max-width: 1180px;
     height: 730px;
-
     position: relative;
 }
 
 .content-section img {
     position: absolute;
     left: 10%;
-    top: 20%;
+    top: 30%;
     width: 40%;
-
     max-width: 1200px;
     max-height: 627px;
 }
 
 .outer-form {
-
     border: solid #ef0060 4px;
     position: absolute;
-    top: 10%;
+    top: 12%;
     left: 55%;
     height: 500px;
 }
 
 .form {
     background-color: gray;
-    padding: 10px;
-    padding-top: 20px;
-
+    padding: 20px 10px 10px 10px;
 }
 
 .outer-form p {
     padding: 15px;
 }
 
-.hs-form label{
+.hs-form label {
     text-align: right;
-
 }
 
 .hs-form .hs-button {
-    background-color: red;
+    background-color: #ef0060;
 }
-.hs-form .hs-field-desc {
-
-}
-
-
 
 footer {
-background-color: black;
+    background-color: black;
+    width: 100%;
+    height: 450px;
+    color: #22b5eb;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+footer li {
+    list-style: none;
+}
+
+.mountain-background {
+    background: url("http://cdn2.hubspot.net/hubfs/4344430/WolvesSummit_April2018/Images/bg-triangles-dark-1.png") no-repeat;;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 140px;
+    top: 191px;
 }
 
 .inner-footer {
-margin: auto;
-background-color: brown;
-height: 118px;
-width: 83%;
-max-width: 1180px;
+    display: block;
+    margin: auto;
+    height: 118px;
+    width: 83%;
+    max-width: 1180px;
 }
 
-.inner-footer h2 {
-margin: 0;
+.inner-footer > ul > li > a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16.8px;
+    font-weight: 700;
+}
 
+.inner-footer > ul > li {
+    display: inline-block;
+}
+
+.inner-footer ul {
+    padding: 20px 35px 0 35px;
 }

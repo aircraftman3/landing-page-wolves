@@ -9,6 +9,7 @@
     <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
     <![endif]-->
     <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
 <header class="outer-container">
@@ -17,21 +18,54 @@
                 src="https://cdn2.hubspot.net/hub/4344430/hubfs/WolvesSummit_April2018/Images/logo-black.png"></a>
         <div class="navbar">
             <ul>
-                <li><a href="">why attend</a></li>
-                <li><a href="">recommend us</a></li>
-                <li><a href="">networking</a></li>
-                <li><a href="">info</a></li>
-                <li><a href="">agenda</a></li>
-                <li><a href="">partners</a></li>
-                <li><a href="">blog</a></li>
-                <li><a href="">buy ticket</a></li>
+                <li><a href="#">detailed agenda</a></li>
+                <li class="navbar-clicked" onclick="showMenu()"><a class="after-arrow" href="#">why attend</a></li>
+                <div class="why-attend-menu">
 
+                    <li>
+                        <a href="">business</a>
+                        <ul>
+                            <li><a href="">find innovation</a></li>
+                            <li><a href="">find clients</a></li>
+                            <li id="hidden-li"><a href="">f</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">startups</a>
+                        <ul>
+                            <li><a href="">attend for free</a></li>
+                            <li><a href="">attend as scaleup</a></li>
+                            <li id="hidden-li"><a href="">f</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">investor</a>
+                        <ul>
+                            <li><a href="">find innovation</a></li>
+                            <li id="hidden-li"><a href="">f</a></li>
+                            <li id="hidden-li"><a href="">f</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">and</a>
+                        <ul>
+                            <li><a href="">volunteer</a></li>
+                            <li><a href="">speaker</a></li>
+                            <li><a href="">media</a></li>
+                        </ul>
+                    </li>
+
+                </div>
+                <li><a href="#">networking</a></li>
+                <li><a href="#">info</a></li>
+                <li><a class="after-arrow" href="#">agenda</a></li>
+                <li><a href="#">partners</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">buy ticket</a></li>
             </ul>
         </div>
     </div>
-
 </header>
-
 <main>
     <header class="main-header">
         <div class="inner-header">
@@ -47,9 +81,7 @@
                 <script>
                   hbspt.forms.create({
                     portalId: "4344430",
-
                     formId: "1a8b033e-5419-4d08-b8d4-ca7d367ded6a",
-
                     css: '',
                     locale: 'pl',
                     translations: {
@@ -70,15 +102,67 @@
             </div>
         </div>
     </section>
-
 </main>
-
 <footer>
     <div class="inner-footer">
-        <h2></h2>
+        <ul>
+            <li>
+                <a href="">wolves summit</a>
+                <ul>
+                    <li>Networking</li>
+                    <li>Venue</li>
+                    <li>Recommend us</li>
+                </ul>
+            </li>
+            <li>
+                <a href="">why attend</a>
+                <ul>
+                    <li>Business - find innovation</li>
+                    <li>Business - find clients</li>
+                    <li>Startup - attend for FREE</li>
+                    <li>Startup - join as Scaleup</li>
+                    <li>Investors - find investment</li>
+                    <li>Speaker</li>
+                    <li>Volunteer</li>
+                    <li>Media</li>
+                </ul>
+            </li>
+            <li>
+                <a href="">info</a>
+                <ul>
+                    <li>About</li>
+                    <li>Press Info</li>
+                    <li>General FAQ</li>
+                    <li>Agenda FAQ</li>
+                    <li>Badge Claim FAQ</li>
+                    <li>Investors FAQ</li>
+                    <li>Location</li>
+                    <li>Partnership</li>
+                    <li>Startups FAQ</li>
+                    <li>Tickets FAQ</li>
+                    <li>Visa application FAQ</li>
+                    <li>Volunteers FAQ</li>
+                </ul>
+            </li>
+            <li>
+                <a href="">contact</a>
+                <ul>
+                    <li>Contact information</li>
+                    <li>contact@wolvessummit.com</li>
+                    <li>Privacy policy</li>
+                    <li>Terms and conditions</li>
+                </ul>
+            </li>
+            <li>
+                <a href="">newsletter</a>
+                <ul>
+                    <li>Click here to subscribe</li>
+
+                </ul>
+            </li>
+        </ul>
     </div>
+    <div class="mountain-background"></div>
 </footer>
-
-
 </body>
 </html>
